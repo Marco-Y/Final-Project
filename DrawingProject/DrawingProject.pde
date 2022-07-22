@@ -8,8 +8,15 @@ import ddf.minim.ugens.*;
 //Global Variables
 //
 void setup() {
-  size(1200, 750);
-  println(displayWidth, displayHeight);
+  //Display Checker
+  //Display Orientation
+  //Display and CANVAS Checker
+  size(1200, 750); //Landscape
+  //
+  //Population
+  //
+  rect();
+  //
 }//End setup
 //
 void draw() {
