@@ -1,7 +1,15 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+//
 //Global Variables
 //
 void setup() {
-  size(1000, 750);
+  size(1200, 750);
+  println(displayWidth, displayHeight);
 }//End setup
 //
 void draw() {
