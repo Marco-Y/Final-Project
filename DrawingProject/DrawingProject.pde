@@ -27,20 +27,20 @@ void setup() {
 }//End setup
 //
 void draw() {
-  //if (draw == true) ellipse( mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
-  if ( draw=true && mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) 
+  if ( draw=true && mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) line(mouseX, mouseY, pmouseX, pmouseY);
 }//End draw
   //
   void keyPressed() {
   }//End keyPressed
 //
 void mousePressed() {
-  if ( mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight )
+  if ( mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
     if (draw=true) {
       draw=false;
     } else {
       draw=true;
     }
+  }
 }//End mousePressed
 //
 //End MAIN Program
