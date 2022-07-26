@@ -14,13 +14,7 @@ void setup() {
   //Display and CANVAS Checker
   size(1200, 750); //Landscape
   //
-  //Population
-  drawingSurfaceX = width*1/2;
-  drawingSurfaceY = height*0;
-  drawingSurfaceWidth = width*1/2;
-  drawingSurfaceHeight = height;
-  drawingDiameter = width*1/100;
-  //
+  populationVariables();
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
 }//End setup
