@@ -22,6 +22,8 @@ void setup() {
 void draw() {
   if ( draw=true && mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
+    //fill(51);
+    //rect(0, 0, width*1/2, height);
   }
 }//End draw
   //
@@ -35,6 +37,8 @@ void mousePressed() {
     } else {
       draw=true;
     }
+  } else {
+    rect
   }
 }//End mousePressed
 //
