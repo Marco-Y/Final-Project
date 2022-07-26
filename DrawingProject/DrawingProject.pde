@@ -24,11 +24,18 @@ void setup() {
 }//End setup
 //
 void draw() {
-  if ( draw=true && mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    fill(defaultGrey);
-    rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
-    fill(resetWhite);
+  if (draw==true) {
+    if ( mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      fill(defaultGrey);
+      rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
+      fill(resetWhite);
+    } else {
+      if ( mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
+        fill(resetWhite);
+        line(mouseX, mouseY, pmouseX, pmouseY);
+      }
+    }
   }
 }//End draw
 //
@@ -42,6 +49,6 @@ void mouseDragged() {
     } else {
       draw=true;
     }
-    }//End mousePressed
-    //
-    //End MAIN Program
+  }//End mousePressed
+  //
+  //End MAIN Program
