@@ -38,7 +38,7 @@ void mousePressed() {
       draw=true;
     }
   } else {
-    rect
+    rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
   }
 }//End mousePressed
 //
