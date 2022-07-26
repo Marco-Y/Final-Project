@@ -15,6 +15,10 @@ void setup() {
   size(1200, 750); //Landscape
   //
   populationVariables();
+  //background
+  fill(defaultGrey);
+  rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
+  fill(resetWhite);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
 }//End setup
@@ -22,23 +26,22 @@ void setup() {
 void draw() {
   if ( draw=true && mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
     line(mouseX, mouseY, pmouseX, pmouseY);
-    //fill(51);
-    //rect(0, 0, width*1/2, height);
+    fill(defaultGrey);
+    rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
+    fill(resetWhite);
   }
 }//End draw
-  //
-  void keyPressed() {
-  }//End keyPressed
 //
-void mousePressed() {
+void keyPressed() {
+}//End keyPressed
+//
+void mouseDragged() {
   if ( mouseX> drawingSurfaceX && mouseX< drawingSurfaceX+drawingSurfaceWidth  && mouseY> drawingSurfaceY && mouseY< drawingSurfaceY+drawingSurfaceHeight ) {
-    if (draw=true) {
+    if (draw==true) {
       draw=false;
     } else {
-      draw=true;
+      draw=false;
     }
-  } else {
-    rect(selectingSurfaceX, selectingSurfaceY, selectingSurfaceWidth, selectingSurfaceHeight);
   }
 }//End mousePressed
 //

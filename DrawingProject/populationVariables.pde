@@ -10,9 +10,9 @@ void populationVariables() {
   drawingSurfaceHeight = height;
   drawingDiameter = width*1/100;
   //
-  selectingSurfaceX = 0;
-  selectingSurfaceY = 0;
-  selectingSurfaceWidth = width;
+  selectingSurfaceX *= 0;
+  selectingSurfaceY *= 0;
+  selectingSurfaceWidth = width*1/2;
   selectingSurfaceHeight = height;
-  
+  //
 }//End populationVariables
